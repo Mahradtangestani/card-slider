@@ -21,9 +21,12 @@ function App() {
   };
 
   return (
+    <>
+    <div className="flex justify-center mt-14">
+        <h4 className="italic text-xl font-bold border-b-2 border-indigo-500">Card Slider</h4>
+    </div>
     <div className="w-2/3 m-auto">
         <div className="mt-14">
-        <h2 className="text-center my-12 italic font-bold text-xl">Card Slider</h2>
         <Slider {...settings}> 
         {
           Data.map((d , index)=>(
@@ -42,6 +45,7 @@ function App() {
         </Slider>
         </div>
     </div>
+    </>
   );
 }
 const Data = [
